@@ -1,15 +1,21 @@
-import './App.css';
 
+// componentss
+import DisplayImageWithName from './Components/displayImageWithName';
+
+// assets
 import image from './assets/bridge.jpg'
+
+// css
+import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <img style={{
-        maxWidth: '400px',
-        width: '100%'
-      }} src={image} />
-    </div>
+      <DisplayImageWithName 
+        title={ "Tyler" }
+        image={image}
+      />    
+      </div>
   );
 }
 
