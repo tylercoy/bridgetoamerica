@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const DisplayImageWithName = ({ title, image }) => {
+const DisplayImageWithNames = ({ title="Ashley", image }) => {
   return (
     <div>
       <h1>{title}</h1>
@@ -15,4 +15,4 @@ const DisplayImageWithName = ({ title, image }) => {
   );
 };
 
-export default DisplayImageWithName;
+export default DisplayImageWithNames;
