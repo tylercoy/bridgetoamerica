@@ -1,0 +1,109 @@
+
+  
+  .contact-container {
+    background: linear-gradient(#00bfa5, #e0f7fa); /* Cyan green gradient */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100vh;
+  }
+  
+  .contact-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+  }
+  
+  .contact-left h2 {
+    font-weight: 600;
+    color: #004d40;
+    font-size: 48px;
+  }
+  
+  .contact-left p {
+    color: #004d40;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-left hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #004d40;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-inputs {
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+  }
+  
+  .contact-inputs:focus {
+    border: 2px solid #ff994f;
+  }
+  
+  .contact-inputs::placeholder {
+    color: #a9a9a9;
+  }
+  
+  .contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    cursor: pointer;
+  }
+  
+  .contact-left button img {
+    height: 15px;
+  }
+  
+  .contact-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-right img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 800px) {
+    .contact-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact-right {
+      display: none;
+    }
+  
+    .contact-inputs {
+      width: 80vw;
+    }
+  }
+  

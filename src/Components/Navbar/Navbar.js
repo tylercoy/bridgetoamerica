@@ -1,12 +1,21 @@
-import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import { Link, useMatch, useResolvedPath, useLocation } from "react-router-dom";
 
 export default function Navbar() {
+    const { pathname } = useLocation()
+
+    const contactUrl = pathname.includes('contact-us')
+    
+
     return (
         <nav className="nav">
             <Link to="/" className="site-title">Bridge to America</Link>
             <ul>
-                <CustomLink to="/about">About</CustomLink>
-                <CustomLink to="/placeholder">Welcome</CustomLink>
+                {
+                    contactUrl && <CustomLink to="/">Home</CustomLink>
+                }
+                {
+                    !contactUrl && <CustomLink to="/contact-us">Contact</CustomLink>
+                }
             </ul>
         </nav>
     );
