@@ -15,8 +15,6 @@ function App() {
       <Navbar /> {/* Place Navbar at the top */}
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        {/* <Route path="about" element={<About />} /> */}
-        {/* <Route path="placeholder" element={<Welcome />} /> */}
         <Route path="contact-us" element={<ContactForm />} />
       </Routes>
     </div>

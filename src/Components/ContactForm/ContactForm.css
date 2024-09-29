@@ -1,7 +1,7 @@
 
   
   .contact-container {
-    background: linear-gradient(#00bfa5, #e0f7fa); /* Cyan green gradient */
+    background: linear-gradient(#00bfa5, #e0f7fa);
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
