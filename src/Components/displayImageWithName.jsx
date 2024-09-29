@@ -16,4 +16,4 @@ const DisplayImageWithName = ({ image }) => {
   );
 };
 
-export default DisplayImageWithName;
+export default DisplayImageWithNames;
