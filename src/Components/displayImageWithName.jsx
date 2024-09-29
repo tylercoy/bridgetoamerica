@@ -1,15 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
-const DisplayImageWithNames = ({ title="Ashley", image }) => {
+const DisplayImageWithName = ({ image }) => {
   return (
-    <div>
-      <h1>{title}</h1>
+    <div style={{ textAlign: "center", width: "100%", overflow: "hidden" }}>
       <img
         style={{
-          maxWidth: "400px",
-          width: "100%",
+          maxWidth: "60vw", // Limit width to 80% of the viewport width
+          height: "auto", // Maintain aspect ratio
+          objectFit: "cover", // Ensure the image covers the container
         }}
         src={image}
+        alt="Description of the image" // Add alt text for accessibility
       />
     </div>
   );

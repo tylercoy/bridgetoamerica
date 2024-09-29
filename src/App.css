@@ -34,5 +34,41 @@
   }
   to {
     transform: rotate(360deg);
-  }
+  }}
+
+
+button{
+  padding: 10px 20px;
+  font-size: 16px;
+  color: brown;
+  border: none;
+  border-radius:5px;
+  cursor: pointer;
 }
+
+
+.chatbot {
+  position: absolute; /* Position it relative to the nearest positioned ancestor (body) */
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  width: 60px; /* Ultra-reduced width */
+  max-width: 50vw; /* Ensure it doesn't overflow the viewport */
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent background for visibility */
+  border-radius: 4px; /* Smaller rounded corners */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 2px; /* Further reduced inner padding */
+  z-index: 10; /* Ensure it appears on top of other elements */
+}
+
+.chatbot-header {
+  font-weight: bold;
+  margin-bottom: 1px; /* Minimal space between header and content */
+  font-size: 6px; /* Smaller font size for the header */
+}
+
+.chatbot p {
+  font-size: 4px; /* Very small font size for the content */
+  margin: 0; /* Remove default margin */
+}
+
+
